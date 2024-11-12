@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Religi Pekalongan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #004d40;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .destinations {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .destinations h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #004d40;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                height: 300px;
+                padding: 100px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#destinasi">Destinasi</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header id="beranda">
+        <h1>Wisata Religi Pekalongan</h1>
+        <p>Jelajahi keindahan spiritual dan sejarah religius di Kota Batik</p>
+    </header>
+
+    <main class="destinations" id="destinasi">
+        <h2>Destinasi Populer</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.fFBbNRKdEyrqWlZSXYsZfwHaFj?rs=1&pid=ImgDetMain" alt="">
+                <div class="card-content">
+                    <h3>Masjid Agung Pekalongan</h3>
+                    <p>Masjid bersejarah dengan arsitektur yang memukau, menjadi pusat kegiatan religius masyarakat Pekalongan.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.Yb5pp9SSBO945-y1EZygsgHaFj?rs=1&pid=ImgDetMain" alt="">
+                <div class="card-content">
+                    <h3>Makam Syekh Maulana Maghribi</h3>
+                    <p>Tempat ziarah yang menyimpan sejarah penyebaran Islam di wilayah Pekalongan.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.K6ulOL8HuyO0XgrZCXSStwHaEK?rs=1&pid=ImgDetMain" alt="">
+                <div class="card-content">
+                    <h3>Kanzus Sholawat</h3>
+                    <p>Pusat pembelajaran agama dan budaya Islam yang terkenal dengan arsitektur uniknya.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wisata Religi Pekalongan. Developed with ❤️ for religious tourism.</p>
+    </footer>
+</body>
+</html>
